@@ -9,11 +9,32 @@
         <h1 id="title">Code CatO Survey Form</h1>
         <p id="description">this is the CodeCato survey! Welcome!</p>
         <form id="survey-form">
-            <label for="name-label"><input id="name" type="text" required></label>
-            <label for="email-label"><input id="email" type="email" required></label>
-            <label for="number-label"><input id="number" type="number"></label>
-            
+            <fieldset>
+            <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Your name here..."  required></label>
+            <label id="email-label">Enter your email: <input id="email" type="email" placeholder="Your email here..." required></label>
+            <label id="number-label">Enter your number: <input id="number" type="number" min="1" max="999" placeholder="999"></label>
+            <select id="dropdown">
+                <option>Select an option</option>
+                <option>Pathfinder 2e</option>
+                <option>D&D 5e</option>
+                <option>Call of Cthulhu</option>
+                <option>Others</option>
+            </select>
+            </fieldset>
+            <fieldset>            
+                <input id="d" type="radio" value="1" name="1" checked>teste
+                <input id="d" type="radio" value="2" name="1" >tested
+                <input id="d" type="radio" value="3" name="1" >teste
+            </fieldset>
+            <input type="checkbox" value="4">opt 1
+            <input type="checkbox" value="5">opt 2
+            <input type="checkbox" value="6">opt 3
+            <input type="checkbox" value="7">opt 4
 
+            <textarea placeholder="type here"></textarea>
+
+            <button id="submit">Submit</button>
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
