@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Survey Form</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1 id="title">Code CatO Survey Form</h1>
@@ -12,28 +12,28 @@
             <fieldset>
             <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Your name here..."  required></label>
             <label id="email-label">Enter your email: <input id="email" type="email" placeholder="Your email here..." required></label>
-            <label id="number-label">Enter your number: <input id="number" type="number" min="1" max="999" placeholder="999"></label>
+            <label id="number-label">How old are you?: <input id="number" type="number" min="1" max="999" placeholder="999"></label>
             <select id="dropdown">
-                <option>Select an option</option>
+                <option>Select an option for which system you want to play</option>
                 <option>Pathfinder 2e</option>
                 <option>D&D 5e</option>
                 <option>Call of Cthulhu</option>
                 <option>Others</option>
             </select>
             </fieldset>
-            <fieldset>            
-                <input id="d" type="radio" value="1" name="1" checked>teste
-                <input id="d" type="radio" value="2" name="1" >tested
-                <input id="d" type="radio" value="3" name="1" >teste
+            <fieldset> <legend>Select the period you are free to play</legend>           
+                <input id="d" type="radio" value="1" name="1" class="inline" checked>early bird
+                <input id="d" type="radio" value="2" name="1" class="inline">the sunset will find me playing! 
+                <input id="d" type="radio" value="3" name="1" class="inline">night owl
             </fieldset>
-            <input type="checkbox" value="4">opt 1
-            <input type="checkbox" value="5">opt 2
-            <input type="checkbox" value="6">opt 3
-            <input type="checkbox" value="7">opt 4
+            <fieldset><legend>What do you love more in RPG?</legend>
+            <input type="checkbox" value="4" class="inline">Roleplay
+            <input type="checkbox" value="5" class="inline">Dungeon Crawling
+            <input type="checkbox" value="6" class="inline">Combo
+            <input type="checkbox" value="7" class="inline">Story and character dev
+            </fieldset>
+            <label>Speak about you: <textarea placeholder="I'm a rpg player!"></textarea></label>
 
-            <textarea placeholder="type here"></textarea>
-
-            <button id="submit">Submit</button>
             <input type="submit" value="Submit">
         </form>
     </body>
